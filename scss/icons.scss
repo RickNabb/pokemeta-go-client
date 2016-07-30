@@ -1,0 +1,36 @@
+.platform-icon {
+  position: relative;
+  top: 50px;
+  z-index: 10;
+}
+.platform-icon:hover {
+  cursor: pointer;
+}
+.header-icon {
+  margin-top: 1%;
+  display: inline-block;
+  margin-right: 2%;
+  opacity: 0.75;
+  padding: 5px;
+}
+.header-icon.active { opacity: 1.0; }
+.header-icon.active:hover { cursor: default; }
+.header-icon:hover { 
+  cursor: pointer;
+  opacity: 1.0;
+}
+.header-icon.inactive:hover { cursor: not-allowed; opacity: 0.75; }
+.footer-icon { margin-right: 2%; }
+
+.major-icon {
+  font-size: 3em;
+}
+.circle-icon {
+  border: 1px solid $off-black;
+  border-radius: 100%;
+  padding: 10px 20px 10px 20px;
+}
+.circle-icon:hover {
+  background-color: $off-black;
+  color: #fff;
+}

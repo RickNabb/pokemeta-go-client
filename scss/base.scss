@@ -1,0 +1,155 @@
+/** VARIABLES **/
+
+$light-accent: #FFF;
+$off-black: #414042;
+$green-accent: #2BB673;
+$green-accent-dark: #218C59;
+$blue-accent: #27AAE1;
+$gold-accent: #FBB040;
+
+$pt-gray: #C0B7AF;
+$pt-blue: #91A6CF;
+$pt-pink: #F5CAC9;
+$pt-lt-green: #B6BA99;
+$pt-dk-gray: #615C60;
+
+$bg-color: #cc3f3f;
+
+/** COLORS **/
+.fg-bg-color { color: $bg-color; }
+.bg-bg-color { background-color: $bg-color; }
+.fg-off-black { color: $off-black; }
+.bg-off-black { background-color: $off-black; }
+.fg-light { color: $light-accent; }
+.bg-light { background-color: $light-accent; }
+.fg-green { color: $green-accent; }
+.bg-green { background-color: $green-accent; }
+.fg-dark-green { color: $green-accent-dark; }
+.bg-dark-green { background-color: $green-accent-dark; }
+.fg-blue { color: $blue-accent; }
+.bg-blue { background-color: $blue-accent; }
+.fg-gold { color: $gold-accent; }
+.bg-gold { background-color: $gold-accent; }
+.border-green { border: 2px solid $green-accent; }
+.border-blue { border: 2px solid $blue-accent; }
+.border-gold { border: 2px solid $gold-accent; }
+
+/** HEADERS AND PARAGRAPHS **/
+
+h1,h2,h3,h4,h5,h6,p,span {
+    font-family: "Delicious";
+    color: $light-accent;
+}
+
+a { color: $green-accent; }
+a:visited { color: $green-accent-dark; }
+a.button:visited { color: #fff; }
+a:hover { color: $green-accent-dark; }
+
+/** BUTTONS **/
+a.button.bg-light:hover { background-color: $light-accent * 0.9; }
+a.button.bg-bg-color:hover { background-color: $bg-color * 0.9; }
+a.button.bg-green:hover { background-color: $green-accent * 0.9; }
+a.button.bg-blue:hover { background-color: $blue-accent * 0.9; }
+a.button.bg-gold:hover { background-color: $gold-accent * 0.9; }
+
+i { padding-right: 10px; vertical-align: bottom; }
+i.right { padding-left: 10px; }
+
+/** BODY **/
+
+body {
+    background: -webkit-linear-gradient($bg-color, $bg-color * 0.8);
+    background: -moz-linear-gradient($bg-color, $bg-color * 0.8);
+    background: -o-linear-gradient($bg-color, $bg-color * 0.8);
+    background: -linear-gradient($bg-color, $bg-color * 0.8);
+}
+
+hr { border-color: #bbb; }
+
+/** POSITIONS **/
+
+.header {
+  position: fixed;
+  top: 0px;
+  height: 60px;
+  z-index: 12;
+  margin-bottom: 100px;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: $bg-color;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  height: 125px;
+  overflow-y: hidden;
+  z-index: 10;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.bottom-menu {
+  position: fixed;
+  bottom: 0px;
+  box-shadow: 0px -5px 10px #444;
+  background: -webkit-linear-gradient($bg-color * 0.8, $bg-color * 0.7);
+  background: -moz-linear-gradient($bg-color * 0.8, $bg-color * 0.7);
+  background: -o-linear-gradient($bg-color * 0.8, $bg-color * 0.7);
+  background: -linear-gradient($bg-color * 0.8, $bg-color * 0.7);
+  padding-bottom: 5%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: 10;
+  margin-top: 100px;
+  width: 100%;
+}
+.bottom-menu-icons {
+  z-index: 11;
+}
+
+.footer-fade-bottom {
+  background-color: $bg-color;
+  opacity: 0.75;
+  height: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-fade-mid {
+  background-color: $bg-color;
+  opacity: 0.5;
+  height: 15px;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-fade-top {
+  background-color: $bg-color;
+  opacity: 0.25;
+  height: 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-icons {
+  background-color: $bg-color;
+  height: 80px;
+  z-index: 10;
+}
+
+.side-toolbar {
+  width: 50px;
+  position: fixed;
+  top: 10%;
+  z-index: 11;
+  border-radius: 5px;
+  background-color: $light-accent;
+  left: -55px;
+  padding: 1% 5px 5% 5px;
+}
+.side-toolbar.active {
+  left: -5px;
+}

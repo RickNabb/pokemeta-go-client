@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "pokemon-solid";
+  src: url("../fonts/Pokemon Solid.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1.pokemon-solid,
+h2.pokemon-solid,
+h3.pokemon-solid,
+h4.pokemon-solid,
+h5.pokemon-solid,
+h6.pokemon-solid,
+p.pokemon-solid,
+span.pokemon-solid { font-family: "pokemon-solid"; }
+
+.pokemon-colors {
+  color: $gold-accent * 1.2;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: $blue-accent * 0.6;
+  -webkit-text-fill-color: $gold-accent * 1.2;
+}
+
+@font-face {
+  font-family: "pokemon-hollow";
+  src: url("../fonts/Pokemon Hollow.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1.pokemon-hollow,
+h2.pokemon-hollow,
+h3.pokemon-hollow,
+h4.pokemon-hollow,
+h5.pokemon-hollow,
+h6.pokemon-hollow,
+p.pokemon-hollow,
+span.pokemon-hollow { font-family: "pokemon-hollow"; }

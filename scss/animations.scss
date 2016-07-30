@@ -1,0 +1,59 @@
+/** ANIMATION CLASSES **/
+
+.anim-hover-up:hover {
+  -webkit-transform: translate(0,-2em);
+  -moz-transform: translate(0,-2em);
+  -o-transform: translate(0,-2em);
+  -ms-transform: translate(0,-2em);
+  transform: translate(0,-2em);
+}
+.anim-hover-down:hover {
+  -webkit-transform: translate(0,2em);
+  -moz-transform: translate(0,2em);
+  -o-transform: translate(0,2em);
+  -ms-transform: translate(0,2em);
+  transform: translate(0,2em);
+}
+.anim-border-blue:hover {
+  border: 2px solid $blue-accent;
+}
+.anim-border-green:hover {
+  border: 2px solid $green-accent;
+}
+.anim-border-gold:hover {
+  border: 2px solid $gold-accent;
+}
+.ease-in-out {
+  transition: 0.4s ease-in-out;
+}
+
+.anim-border-flip {
+  
+}
+
+.stretch-to-width {
+  animation-name: stretch-to-width;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+}
+
+.anim-pause {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/** KEYFRAMES **/
+
+@keyframes stretch-to-width {
+  0% {
+    transform: scale(1.0);
+  }
+  10% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(15);
+  }
+}

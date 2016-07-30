@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>Test</title>
+    <!-- <script data-main="app" src="lib/require.min.js"></script> -->
+     <script src="bower_components/jquery/dist/jquery.min.js"></script> 
+    <link href="./css/app.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/foundation-icons.css" />
+    <script src="app/animations.js"></script>
+  </head>
+  <body>
+    <div class="row space-sm">
+    </div>
+    <div class="bg-off-black">
+      <div class="row space-xs"></div>
+      <div id="squad-info">
+        <div class="row">
+          <div class="columns">
+            <h1>Squad Status</h1>
+          </div>
+        </div>
+        <div class="row offset-xs">
+          <div class="columns">
+            <p>You do not belong to a squad!</p>
+            <a href="#" class="button bg-gold"><i class="fi-magnifying-glass"></i>Search</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="friend-info">
+        <div class="row">
+          <div class="columns">
+            <h1>Friends</h1>
+          </div>
+        </div>
+        <div class="row offset-xs">
+          <div class="columns">
+            <p>You have no friends! (in your list)</p>
+            <a href="#" class="button bg-gold"><i class="fi-plus"></i>Add a friend</a>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div id="friend-info">
+        <div class="row">
+          <div class="columns">
+            <h1>Trades</h1>
+          </div>
+        </div>
+        <div class="row offset-xs">
+          <div class="columns">
+            <p>You have no pending trades.</p>
+            <a href="#" class="button bg-gold"><i class="fi-plus"></i>Start a Trade</a>
+          </div>
+        </div>
+      </div>
+      <div class="row space-md"></div>
+    </div>
+    <div class="bottom-menu ease-in-out">
+      <div class="row offset-xs">
+        <div class="columns small-3">
+            <h3>RickNabb</h3>
+            <h4>Level 15</h4>
+        </div>
+        <div class="columns small-3 small-offset-1 left">
+          <a href="#" onclick="anim8('menu-btn', 'stretch-to-width', 1000, toggleBottomMenu);"><div id="menu-btn" class="center circle bg-light width-lg height-lg"></div></a>
+        </div>
+        <div class="columns small-3 center">
+          <h1>2<i class="fi-marker right"></i></h1>
+        </div>
+      </div>
+      <div id="bottom-menu-icons" style="display: none;">
+        <div class="row">
+          <div class="columns small-3 small-offset-1 center">
+            <h1><i class="fi-torso circle-icon ease-in-out fg-off-black"></i></h1>
+          </div>
+          <div class="columns small-3 center left">
+            <h1><i class="fi-home ease-in-out circle-icon fg-off-black"></i></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+<!--  <script src="http://localhost:8080/socket.io/socket.io.js"></script>-->
+  <script>
+//    var socket = io('http://localhost:8080');
+  </script>
+</html>
