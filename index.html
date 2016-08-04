@@ -2,56 +2,20 @@
   <head>
     <title>Test</title>
     <!-- <script data-main="app" src="lib/require.min.js"></script> -->
+    <script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+
+    <script src="app/client.js"></script>
+
     <link href="./css/app.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/foundation-icons.css" />
   </head>
   <body>
-    <div class="row">
-      <div class="small-10 small-offset-1">
-        <h1 id="logo" class="center pokemon-solid pokemon-colors" style="font-size: 60px;">PoKeDeX <span>GO</span></h1>
-      </div>
-    </div>
-    <div class="bg-off-black">
-      <div class="row space-xl">
-      </div>
-      <div class="row">
-        <div class="small-10 small-offset-1">
-          <div class="center">
-            <h3>Sign in with</h3>
-          </div>
-        </div>
-      </div>
-      <div class="row space-xs">
-      </div>
-      <div class="row">
-        <div class="small-10 small-offset-1">
-          <div class="center">
-            <a class="button bg-light" style="width: 80%"><h3 class="fg-off-black">GOOGLE</h3></a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="small-10 small-offset-1">
-          <div class="center">
-            <a class="button bg-gold" style="width:80%;"><h3>POKEMON TRAINER CLUB</h3></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row space-sm"></div>
-    <div class="footer">
-      <div class="row space-md">
-      </div>
-      <div class="row">
-        <div class="small-12 columns">
-          <p>(C) 2016 Nick Rabb
-          <br/>All rights reserved to Niantic Inc., Pokemon
-          <br/>& Nintendo / Creatures Inc. / GAME FREAK Inc.</p>
-        </div>
-      </div>
-    </div>
+    <div id="content"></div>
   </body>
 <!--  <script src="http://localhost:8080/socket.io/socket.io.js"></script>-->
+  <script src="lib/main.js"></script>
   <script>
 //    var socket = io('http://localhost:8080');
   </script>
