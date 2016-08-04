@@ -1,10 +1,14 @@
 var webpack = require('webpack');
+var path = require('path');
+
+var BUILD_DIR = path.resolve(__dirname, 'lib');
+var APP_DIR = path.resolve(__dirname, 'app/components');
 
 module.exports = {
-  entry: './app/components/main.jsx',
+  entry: APP_DIR + '/main.jsx',
   output: {
     // Output the bundled file.
-    path: './lib',
+    path: BUILD_DIR,
     // Use the name specified in the entry key as name for the bundle file.
     filename: 'main.js'
   },
@@ -13,7 +17,7 @@ module.exports = {
       {
         // Test for js or jsx files.
         test: /\.jsx?$/,
-        exclude: /node_modules/,
+        include: APP_DIR,
         loader: 'babel'
       }
     ]

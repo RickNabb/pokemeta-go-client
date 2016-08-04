@@ -5,13 +5,22 @@
     "type": "git",
     "url": "https://github.com/zurb/foundation-libsass-template.git"
   },
+  "scripts": {
+    "dev": "webpack -d --watch",
+    "build": "webpack -p"
+  },
   "devDependencies": {
-    "node-sass": "3.3.3",
-    "grunt": "~0.4.5",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-sass": "1.0.0",
-    "babel-core": "^5.8.23",
-    "babel-loader": "^5.3.2",
-    "webpack": "^1.12.0"
+    "node-sass": "3.8.0",
+    "grunt": "~1.0.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-sass": "1.2.0",
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "babel-preset-react": "~6.11.1",
+    "react": "~15.3.0",
+    "react-dom": "~15.3.0"
   }
 }

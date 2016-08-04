@@ -6,10 +6,10 @@
 */
 
 var React = require('react');
+var ReactDOM = require('react-dom');
+var Login = require('./login.jsx');
 
-var Login = require('./login');
-
-React.render(
+ReactDOM.render(
   <Login />,
   document.getElementById('content')
 );

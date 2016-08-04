@@ -11,9 +11,9 @@ var Title = React.createClass({
   render: function () {
     'use strict';
     return (
-      <div class="row">
-        <div class="small-10 small-offset-1">
-          <h1 id="logo" class="center pokemon-solid pokemon-colors" style="font-size: 60px;">PoKeDeX <span>GO</span></h1>
+      <div className="row">
+        <div className="small-10 small-offset-1">
+          <h1 id="logo" className="center pokemon-solid pokemon-colors" style={{fontSize: '60px'}}>PoKeDeX <span>GO</span></h1>
         </div>
       </div>
     );
@@ -24,28 +24,28 @@ var BodyLogin = React.createClass({
   render: function () {
     'use strict';
     return (
-      <div class="bg-off-black">
-        <div class="row space-xl"></div>
-        <div class="row">
-          <div class="small-10 small-offset-1">
-            <div class="center">
+      <div className="bg-off-black">
+        <div className="row space-xl"></div>
+        <div className="row">
+          <div className="small-10 small-offset-1">
+            <div className="center">
               <h3>Sign in with</h3>
             </div>
           </div>
         </div>
-        <div class="row space-xs">
+        <div className="row space-xs">
         </div>
-        <div class="row">
-          <div class="small-10 small-offset-1">
-            <div class="center">
-              <a class="button bg-light" style="width: 80%"><h3 class="fg-off-black">GOOGLE</h3></a>
+        <div className="row">
+          <div className="small-10 small-offset-1">
+            <div className="center">
+              <a className="button bg-light" style={{width: '80%'}}><h3 className="fg-off-black">GOOGLE</h3></a>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="small-10 small-offset-1">
-            <div class="center">
-              <a class="button bg-gold" style="width:80%;"><h3>POKEMON TRAINER CLUB</h3></a>
+        <div className="row">
+          <div className="small-10 small-offset-1">
+            <div className="center">
+              <a className="button bg-gold" style={{width: '80%'}}><h3>POKEMON TRAINER CLUB</h3></a>
             </div>
           </div>
         </div>
@@ -58,10 +58,10 @@ var Footer = React.createClass({
   render: function () {
     'use strict';
     return (
-      <div class="footer">
-        <div class="row space-md"></div>
-        <div class="row">
-          <div class="small-12 columns">
+      <div className="footer">
+        <div className="row space-md"></div>
+        <div className="row">
+          <div className="small-12 columns">
             <p>(C) 2016 Nick Rabb
             <br/>All rights reserved to Niantic Inc., Pokemon
             <br/>& Nintendo / Creatures Inc. / GAME FREAK Inc.</p>
@@ -79,7 +79,7 @@ var Login = React.createClass({
       <div id="login-screen">
         <Title />
         <BodyLogin />
-        <div class="row space-sm"></div>
+        <div className="row"></div>
         <Footer />
       </div>
     );
