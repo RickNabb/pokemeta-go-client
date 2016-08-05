@@ -7,9 +7,9 @@
 
 //var React = require('react');
 //var Login = require("./app/components/login");
-//
+
 //var STATE_LOGIN = 0;
-//var STATE_MAIN = 1;
+//var STATE_HOME = 1;
 //
 //function changePage(key) {
 //  'use strict';
@@ -20,7 +20,11 @@
 //        document.getElementById('content')
 //        );
 //      break;
-//    case (STATE_MAIN):
+//    case (STATE_HOME):
+//      React.render(
+//        <Home />,
+//        document.getElementById('content')
+//        );
 //      break;
 //  }
 //}

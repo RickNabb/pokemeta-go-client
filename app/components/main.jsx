@@ -7,9 +7,10 @@
 
 var React = require('react');
 var ReactDOM = require('react-dom');
-var Login = require('./login.jsx');
+//var Login = require('./login.jsx');
+var Home = require('./home.jsx');
 
 ReactDOM.render(
-  <Login />,
+  <Home />,
   document.getElementById('content')
 );
